@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="24" failures="0" errors="0" time="10.331">
+  <testsuite name="POC" errors="0" failures="0" skipped="5" timestamp="2023-08-18T12:24:23" time="1.462" tests="6">
+    <testcase classname="POC GET requests GET /posts" name="POC GET requests GET /posts" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="POC GET requests GET /comments with query params" name="POC GET requests GET /comments with query params" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="POC POST request POST / posts" name="POC POST request POST / posts" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="POC PUT Request PUT /posts/{id}" name="POC PUT Request PUT /posts/{id}" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="POC PATCH Request PATCH /posts/{id}" name="POC PATCH Request PATCH /posts/{id}" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="POC DELETE requests DELETE /posts/{id}" name="POC DELETE requests DELETE /posts/{id}" time="0.42">
+    </testcase>
+  </testsuite>
+  <testsuite name="Upload file" errors="0" failures="0" skipped="0" timestamp="2023-08-18T12:24:23" time="3.22" tests="2">
+    <testcase classname="Upload file POST /upload/single" name="Upload file POST /upload/single" time="0.983">
+    </testcase>
+    <testcase classname="Upload file POST /upload/multiple" name="Upload file POST /upload/multiple" time="1.173">
+    </testcase>
+  </testsuite>
+  <testsuite name="GET Categories" errors="0" failures="0" skipped="0" timestamp="2023-08-18T12:24:23" time="7.154" tests="4">
+    <testcase classname="GET Categories GET /categories" name="GET Categories GET /categories" time="0.787">
+    </testcase>
+    <testcase classname="Create Categories POST /categories" name="Create Categories POST /categories" time="0.664">
+    </testcase>
+    <testcase classname="Update Categories PUT /categories" name="Update Categories PUT /categories" time="0.635">
+    </testcase>
+    <testcase classname="Delete Categories DELETE /categories" name="Delete Categories DELETE /categories" time="0.617">
+    </testcase>
+  </testsuite>
+  <testsuite name="Brands" errors="0" failures="0" skipped="0" timestamp="2023-08-18T12:24:23" time="10.185" tests="12">
+    <testcase classname="Brands Fetch Brands GET /brands" name="Brands Fetch Brands GET /brands" time="0.871">
+    </testcase>
+    <testcase classname="Brands Create Brands POST /brands" name="Brands Create Brands POST /brands" time="0.001">
+    </testcase>
+    <testcase classname="Brands Create Brands Schema Verification - name is a mandatory field" name="Brands Create Brands Schema Verification - name is a mandatory field" time="0.469">
+    </testcase>
+    <testcase classname="Brands Create Brands Schema Verification - name is min char length for name &gt; 1" name="Brands Create Brands Schema Verification - name is min char length for name &gt; 1" time="0.534">
+    </testcase>
+    <testcase classname="Brands Create Brands Business Logic - duplicate brand entries are not allowed" name="Brands Create Brands Business Logic - duplicate brand entries are not allowed" time="0.516">
+    </testcase>
+    <testcase classname="Brands Fetch Individual brand GET / brand/{id} Business logic - GET /brand/invalid_id throw 404" name="Brands Fetch Individual brand GET / brand/{id} Business logic - GET /brand/invalid_id throw 404" time="0.534">
+    </testcase>
+    <testcase classname="Brands Schema Verification - Max char length for name = 30" name="Brands Schema Verification - Max char length for name = 30" time="0.473">
+    </testcase>
+    <testcase classname="Brands Business Logic - Description must be a string type" name="Brands Business Logic - Description must be a string type" time="0.513">
+    </testcase>
+    <testcase classname="Brands Update Brands PUT /brands" name="Brands Update Brands PUT /brands" time="0.584">
+    </testcase>
+    <testcase classname="Brands Update Brands PUT /brands/invalid_id" name="Brands Update Brands PUT /brands/invalid_id" time="0.571">
+    </testcase>
+    <testcase classname="Brands DELETE Brands Delete /brands" name="Brands DELETE Brands Delete /brands" time="0.577">
+    </testcase>
+    <testcase classname="Brands DELETE Brands Delete /brands/invalid_id" name="Brands DELETE Brands Delete /brands/invalid_id" time="0.499">
+    </testcase>
+  </testsuite>
+</testsuites>
